@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build output
+dist/
+*.js.map
+*.d.ts
+!src/**/*.d.ts
+
+# Environment
+.env
+.env.local
+.env.production
+
+# Database
+data/*.db
+data/*.db-wal
+data/*.db-shm
+
+# IDE
+.vscode/
+!.vscode/settings.json
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Test coverage
+coverage/
+
+# Temp
+*.tmp
+*.swp
+*~
+
+# ML model cache (downloaded at runtime, ~120 MB)
+.model-cache/
+
+# Generated data files
+data/actual_reviews.json
+data/normalized_reviews.json

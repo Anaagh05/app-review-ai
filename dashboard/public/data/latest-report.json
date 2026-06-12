@@ -1,0 +1,86 @@
+{
+  "product": "groww",
+  "isoWeek": 24,
+  "isoYear": 2026,
+  "generatedAt": "2026-06-12T19:06:30.476Z",
+  "totalReviewsAnalyzed": 379,
+  "reviewWindowWeeks": 12,
+  "docUrl": null,
+  "draftId": "demo",
+  "themes": [
+    {
+      "name": "Feature Requests And Issues",
+      "description": "Users are requesting new features and reporting issues with the app, including problems with trading and customer support. They are also suggesting improvements to existing features.",
+      "reviewCount": 221,
+      "avgRating": 2.5,
+      "representativeQuotes": [
+        "please add stochastic indicator",
+        "BAD EXPERIENCE. DURING MCX TRADING ON 09 Jun 26, MY OPTION BUY ORDER GOT STUCK"
+      ],
+      "actionIdeas": [
+        "Add a stochastic indicator to the charting tool",
+        "Implement an auto trial stop loss feature to help users avoid losses"
+      ]
+    },
+    {
+      "name": "Ease Of Use",
+      "description": "Users praise the app's simplicity and ease of use, making it accessible to beginners. They appreciate the intuitive interface and fast access to services.",
+      "reviewCount": 67,
+      "avgRating": 4.4,
+      "representativeQuotes": [
+        "Easy Interface and Fast access to all the services",
+        "very easy to use this app.",
+        "Super under standing very easy to identity and analysis"
+      ],
+      "actionIdeas": [
+        "Improve the onboarding process for new users",
+        "Enhance the app's navigation to make it even more intuitive"
+      ]
+    },
+    {
+      "name": "Easy Investment Experience",
+      "description": "Users praise Groww for its user-friendly interface and ease of use, making it a great choice for beginners and experienced investors. They appreciate the simplicity of investing in stocks and mutual funds.",
+      "reviewCount": 27,
+      "avgRating": 4.6,
+      "representativeQuotes": [
+        "The interface is clean, SIP setup for mutual funds is simple, and buying stocks/ETFs is straightforward.",
+        "Very easy to use for investment in individual stocks and Mutual funds.",
+        "easy to trade and search easily any stocks."
+      ],
+      "actionIdeas": [
+        "Enhance the app's research tools and advanced trading features to cater to experienced investors.",
+        "Integrate AI-powered features to improve portfolio tracking and investment predictions."
+      ]
+    },
+    {
+      "name": "High Brokerage Charges",
+      "description": "Users are unhappy with the high brokerage charges and hidden fees on the Groww app. They feel that the charges are too much compared to other apps.",
+      "reviewCount": 24,
+      "avgRating": 1.8,
+      "representativeQuotes": [
+        "worst experience in app very high brokerage charges",
+        "Charging too much, as compared to other apps.",
+        "brokerage charges increased, the charges are very high rs 5 per trade"
+      ],
+      "actionIdeas": [
+        "Review and adjust brokerage charges to be more competitive with other apps",
+        "Increase transparency about fees and charges to avoid surprising users"
+      ]
+    },
+    {
+      "name": "Poor Customer Support",
+      "description": "Users are frustrated with Groww's customer support, citing unhelpful and rude representatives, technical glitches, and unresponsive service. Many have had issues resolved slowly or not at all.",
+      "reviewCount": 10,
+      "avgRating": 1.2,
+      "representativeQuotes": [
+        "Customer support is the worst. Does not help",
+        "worst customer support very bad, really very bad they don't communicate",
+        "User Interface is okay. But Customer Service is the worst."
+      ],
+      "actionIdeas": [
+        "Improve customer support training and responsiveness",
+        "Increase staffing to reduce wait times and improve issue resolution"
+      ]
+    }
+  ]
+}

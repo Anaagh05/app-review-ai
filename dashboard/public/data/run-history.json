@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "product": "groww",
+    "isoWeek": 24,
+    "isoYear": 2026,
+    "status": "success",
+    "reviewsFetched": 379,
+    "clustersFound": 5,
+    "runStartedAt": "2026-06-12T19:05:06.941Z",
+    "runFinishedAt": "2026-06-12T19:06:30.476Z",
+    "docUrl": null,
+    "emailMode": "draft",
+    "errorMessage": null
+  }
+]

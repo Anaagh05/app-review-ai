@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "appstore-reviews": {
+      "command": "npx",
+      "args": ["tsx", "mcp-servers/appstore-reviews/src/server.ts"],
+      "env": {}
+    },
+    "playstore-reviews": {
+      "command": "npx",
+      "args": ["tsx", "mcp-servers/playstore-reviews/src/server.ts"],
+      "env": {}
+    }
+  }
+}
