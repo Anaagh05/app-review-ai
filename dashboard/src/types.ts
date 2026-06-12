@@ -36,15 +36,14 @@ export interface RunHistory {
 
 export interface StoredReview {
   id?: number;
-  product: string;
-  app_source: string;
-  app_version: string | null;
+  source: 'app_store' | 'play_store';
+  app_id: string;
   rating: number;
-  review_date: string;
-  author_name: string;
-  review_text: string;
-  review_title: string | null;
-  raw_id: string;
+  title?: string | null;
+  body: string;
+  raw_body: string;
+  date: string;
+  fetched_at: string;
   iso_year: number;
   iso_week: number;
 }

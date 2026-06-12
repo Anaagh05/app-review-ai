@@ -221,6 +221,14 @@ async function runPipeline(opts: RunOptions): Promise<void> {
 
       updateRun(runId, { status: 'success', run_finished_at: new Date().toISOString() });
 
+      exportReport(report);
+      exportNormalizedReviews(storedReviews);
+
+      const db = new Database(config.db.path, { readonly: true });
+      const rows = db.prepare(`SELECT * FROM run_log ORDER BY id DESC`).all() as any[];
+      db.close();
+      exportRunHistory(rows);
+
       printSummary({
         product: config.product,
         isoYear: opts.isoYear,

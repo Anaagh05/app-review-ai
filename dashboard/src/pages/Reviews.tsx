@@ -46,24 +46,24 @@ export default function ReviewsPage() {
               <tr key={i}>
                 <td>
                   <span className="status-badge" style={{ 
-                    background: r.app_source === 'play_store' ? 'rgba(52,211,153,0.15)' : 'rgba(99,102,241,0.15)',
-                    color: r.app_source === 'play_store' ? 'var(--green)' : 'var(--accent)'
+                    background: r.source === 'play_store' ? 'rgba(52,211,153,0.15)' : 'rgba(99,102,241,0.15)',
+                    color: r.source === 'play_store' ? 'var(--green)' : 'var(--accent)'
                   }}>
-                    {r.app_source === 'play_store' ? 'Play' : 'App'}
+                    {r.source === 'play_store' ? 'Play' : 'App'}
                   </span>
                 </td>
                 <td style={{ color: 'var(--yellow)', fontWeight: 'bold' }}>
                   {r.rating}★
                 </td>
                 <td style={{ fontSize: '12px' }}>
-                  {new Date(r.review_date).toLocaleDateString()}
+                  {new Date(r.date).toLocaleDateString()}
                 </td>
                 <td>
                   <div style={{ fontWeight: 600, color: 'var(--text-primary)', marginBottom: 4 }}>
-                    {r.review_title || r.author_name}
+                    {r.title || 'Review'}
                   </div>
                   <div style={{ fontSize: '13px', lineHeight: 1.5 }}>
-                    {r.review_text}
+                    {r.body}
                   </div>
                 </td>
               </tr>
