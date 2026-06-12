@@ -36,6 +36,8 @@ import { embedReviews } from './analysis/embed.js';
 import { clusterReviews } from './analysis/cluster.js';
 import { analyzeAndSummarize } from './analysis/summarize.js';
 import { deliverReport } from './delivery/deliver.js';
+import { exportReport, exportRunHistory, exportNormalizedReviews } from './export.js';
+import Database from 'better-sqlite3';
 import { getISOWeekAndYear } from './utils/date.js';
 import { formatReportAsPlainText } from './delivery/formatter.js';
 
@@ -102,7 +104,7 @@ interface RunOptions {
 }
 
 async function runPipeline(opts: RunOptions): Promise<void> {
-  const TOTAL_STEPS = opts.dryRun ? 8 : 10;
+  const TOTAL_STEPS = opts.dryRun ? 8 : 11;
   const startTime = Date.now();
 
   printBanner();
@@ -260,8 +262,18 @@ async function runPipeline(opts: RunOptions): Promise<void> {
       });
     }
 
-    // ── Step 10: Done ───────────────────────────────────────────────────────
-    step(10, TOTAL_STEPS, 'Run complete.');
+    // ── Step 10: Export JSON Data for Dashboard ──────────────────────────────
+    step(10, TOTAL_STEPS, 'Exporting JSON data for dashboard…');
+    exportReport(report, deliveryResult.docUrl, deliveryResult.draftId);
+    exportNormalizedReviews(storedReviews);
+
+    const db = new Database(config.db.path, { readonly: true });
+    const rows = db.prepare(`SELECT * FROM run_log ORDER BY id DESC`).all() as any[];
+    db.close();
+    exportRunHistory(rows);
+
+    // ── Step 11: Done ───────────────────────────────────────────────────────
+    step(11, TOTAL_STEPS, 'Run complete.');
 
     printSummary({
       product: config.product,

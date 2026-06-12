@@ -33,3 +33,18 @@ export interface RunHistory {
   emailMode: string | null;
   errorMessage: string | null;
 }
+
+export interface StoredReview {
+  id?: number;
+  product: string;
+  app_source: string;
+  app_version: string | null;
+  rating: number;
+  review_date: string;
+  author_name: string;
+  review_text: string;
+  review_title: string | null;
+  raw_id: string;
+  iso_year: number;
+  iso_week: number;
+}

@@ -79,7 +79,21 @@ export function exportReport(
     JSON.stringify(exported, null, 2)
   );
 
-  console.log(`[export] Latest report written to dashboard/public/data/latest-report.json`);
+  fs.writeFileSync(
+    path.join(DATA_DIR, `report-${report.isoYear}-${report.isoWeek}.json`),
+    JSON.stringify(exported, null, 2)
+  );
+
+  console.log(`[export] Report written to dashboard/public/data/latest-report.json and report-${report.isoYear}-${report.isoWeek}.json`);
+}
+
+export function exportNormalizedReviews(reviews: any[]): void {
+  ensureDir();
+  fs.writeFileSync(
+    path.join(DATA_DIR, 'normalized-reviews.json'),
+    JSON.stringify(reviews, null, 2)
+  );
+  console.log(`[export] Normalized reviews written to dashboard/public/data/normalized-reviews.json`);
 }
 
 export function exportRunHistory(runs: any[]): void {
