@@ -1,36 +1,36 @@
 {
   "product": "groww",
-  "isoWeek": 22,
+  "isoWeek": 23,
   "isoYear": 2026,
-  "generatedAt": "2026-06-12T20:40:20.643Z",
+  "generatedAt": "2026-06-12T20:39:35.393Z",
   "totalReviewsAnalyzed": 379,
   "reviewWindowWeeks": 12,
   "themes": [
     {
       "name": "Feature Requests And Issues",
-      "description": "Users are requesting new features and reporting issues with the app, affecting their trading experience. They are seeking improvements to make the app more useful and reliable.",
+      "description": "Users are requesting new features and reporting issues with the app, including problems with trading and customer support. They are also suggesting improvements to existing features.",
       "reviewCount": 221,
       "representativeQuotes": [
         "please add stochastic indicator",
         "BAD EXPERIENCE. DURING MCX TRADING ON 09 Jun 26 , MY OPTION BUY ORDER GOT STUCK"
       ],
       "actionIdeas": [
-        "Add stochastic indicator and other requested features to enhance user experience",
-        "Improve customer support and resolve issues with order placement and cancellation"
+        "Add a stochastic indicator to the charting tool",
+        "Implement an auto trial stop loss feature to help users avoid losses"
       ]
     },
     {
       "name": "Ease Of Use",
-      "description": "Users praise the app's simplicity and ease of use, making it accessible to beginners. They appreciate the intuitive interface and fast access to services.",
+      "description": "Users praise the app for being easy to use and having a simple interface. They appreciate the intuitive design and fast access to services.",
       "reviewCount": 67,
       "representativeQuotes": [
         "Easy Interface and Fast access to all the services",
-        "very easy to use this app.",
-        "it is very easy app to manage all mutual fund."
+        "very easy to use this app",
+        "it is very easy app to manage all mutual fund"
       ],
       "actionIdeas": [
-        "Improve the onboarding process for new users",
-        "Enhance the app's navigation to make it even more intuitive"
+        "Simplify the onboarding process for new users",
+        "Continuously gather feedback to maintain a user-friendly interface"
       ]
     },
     {
@@ -38,18 +38,18 @@
       "description": "Users praise Groww for its user-friendly interface and ease of use for investing in stocks and mutual funds. They find it convenient for tracking portfolios and making informed investment decisions.",
       "reviewCount": 27,
       "representativeQuotes": [
+        "The interface is clean, SIP setup for mutual funds is simple, and buying stocks/ETFs is straightforward.",
         "Very easy to use for investment in individual stocks and Mutual funds.",
-        "beginner's friendly, easy to use, Familiar Environment and easy to Track portfolio.",
-        "easy to trade and search easily any stocks."
+        "Excellent app with a very clean and user-friendly interface."
       ],
       "actionIdeas": [
-        "Enhance the app with more detailed research tools and analysis features",
-        "Integrate AI-powered predictive capabilities to improve investment decisions"
+        "Enhance research tools and advanced trading features to cater to experienced investors.",
+        "Integrate AI-powered predictive analytics to improve investment decisions."
       ]
     },
     {
       "name": "High Brokerage Charges",
-      "description": "Users are complaining about high brokerage charges and hidden fees, leading to a poor experience with the app. Many users are comparing Groww unfavorably to other apps.",
+      "description": "Users are complaining about high brokerage charges and hidden fees on the Groww app. They are unhappy with the lack of clarity and transparency in the charges.",
       "reviewCount": 24,
       "representativeQuotes": [
         "worst experience in app very high brokerage charges",
@@ -58,12 +58,12 @@
       ],
       "actionIdeas": [
         "Review and adjust brokerage charges to be more competitive",
-        "Improve transparency around fees and charges to avoid surprising users"
+        "Improve transparency and clarity in charging structure"
       ]
     },
     {
       "name": "Poor Customer Support",
-      "description": "Users are experiencing poor customer support and technical issues with the app. They are frustrated with the lack of reliable support and generic replies from the support team.",
+      "description": "Users are frustrated with Groww's customer support, citing unhelpful and rude representatives, technical glitches, and unresponsive service. Many have had issues resolved slowly or not at all.",
       "reviewCount": 10,
       "representativeQuotes": [
         "Customer support is the worst. Does not help",
@@ -71,8 +71,8 @@
         "User Interface is okay. But Customer Service is the worst."
       ],
       "actionIdeas": [
-        "Improve customer support team training and responsiveness",
-        "Implement a more reliable and efficient issue resolution process"
+        "Improve customer support training and responsiveness",
+        "Implement a more effective issue tracking and resolution system"
       ]
     }
   ]
