@@ -1,16 +1,16 @@
 [
   {
-    "id": 6,
+    "id": 7,
     "product": "groww",
     "isoWeek": 24,
     "isoYear": 2026,
     "status": "success",
     "reviewsFetched": 323,
     "clustersFound": 5,
-    "runStartedAt": "2026-06-12T19:06:12.744Z",
-    "runFinishedAt": "2026-06-12T19:06:30.494Z",
-    "docUrl": null,
-    "emailMode": null,
+    "runStartedAt": "2026-06-12T20:26:12.172Z",
+    "runFinishedAt": "2026-06-12T20:27:18.489Z",
+    "docUrl": "https://docs.google.com/document/d/1klgJW8kt5kK19q-vy1ZH5bC0iNPX9JRJa3hfwywhdqU/edit",
+    "emailMode": "draft",
     "errorMessage": null
   }
 ]
